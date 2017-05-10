@@ -74,13 +74,10 @@ $ python setup.py build_ext
 Then install:
 
 $ python setup.py install
-​
 
-81
+
 -----------------------
-82
 How to use the GUI:
-83
 -----------------------
 
 Just run the GUI-Makekey.py script and fill out the relevant boxes.
