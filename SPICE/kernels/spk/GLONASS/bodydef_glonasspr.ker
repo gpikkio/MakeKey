@@ -1,0 +1,11 @@
+\begintext
+ 
+      Define an additional set of body, ID code mappings.
+ 
+      \begindata
+  
+      NAIF_BODY_CODE  += ( -190002 , -190003 , -190004 , -190010 , -190012, -190013, -190014 )
+    
+      NAIF_BODY_NAME  += (  'GLONASSPR02',  'GLONASSPR03',  'GLONASSPR04', 'GLONASSPR10' , 'GLONASSPR12', 'GLONASSPR13' , 'GLONASSPR14' )
+      
+
