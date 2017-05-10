@@ -63,9 +63,9 @@ Download the cspice toolkit and extract it to the directory
 "cspice".
 
 In the directory where the folder cspice is, download and
-extract the PySPICE files:
- 
-https://github.com/rca/PySPICE
+extract the SpiceyPy files:
+
+https://github.com/AndrewAnnex/SpiceyPy
 
 Then, run setup.py like so:
 
