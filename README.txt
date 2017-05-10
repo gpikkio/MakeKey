@@ -10,7 +10,7 @@ They require:
 
 - an environment variable $MAKEKEY
 - the python module "ephem";
-- the NAIF SPICE toolkit + the python module "PySPICE".
+- the NAIF SPICE toolkit + the python module "SPICEYPY".
 
 ...and, of course, SCHED is needed for producing creating a .vex file
 out of the .key file. SCHED can be downloaded from:
@@ -40,17 +40,15 @@ It is convenient to set MAKEKEY at login.
 
 
 --------
-PYEPHEM:
+EPHEM:
 --------
-
-pyephem can be downloaded at http://rhodesmill.org/pyephem/
 
 The easiest way to install PyEphem on a Linux or Mac OS machine, after
 making sure that “Python.h” and the other Python header files are
 installed (which on Ubuntu requires the “python-dev” package), is to
 use the pip command, like this: 
 
-$ pip install pyephem
+$ pip install ephem
 
 
 -------
@@ -76,6 +74,16 @@ $ python setup.py build_ext
 Then install:
 
 $ python setup.py install
+​
+
+81
+-----------------------
+82
+How to use the GUI:
+83
+-----------------------
+
+Just run the GUI-Makekey.py script and fill out the relevant boxes.
 
 
 -----------------------
