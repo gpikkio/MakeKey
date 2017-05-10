@@ -1,0 +1,11 @@
+band     = '4CM'
+nchan    = 4
+bits     = 2
+bbfilter = 4.0
+freqref  = 8398.75,8398.5,8398.25,8398.0
+netside  = U
+dbe      = 'rdbe_ddc'
+pol      = RCP
+pcal     = off
+format   = 'VDIF'
+barrel   = roll_off / 

@@ -1,13 +1,21 @@
 nchan    = 4
 bits     = 2
-bbfilter = 4
-freqref  = 8417.99,8417.98,8417.97,8417.96
+bbfilter = 4.0
+freqref  = 8398.59,8398.58,8398.57,8398.56
 pol      = RCP
-netside  = U
-!pcal     = '1MHz'
 pcal     = off
-format   = mkiv1:2
-barrel   = roll_off /
+!format   = mkiv1:2
+barrel   = roll_off / 
+!--------------------------------------------------------------------------
+   firstlo= 8080,8080,8080,8080
+   ifchan  =   A,A,A,A
+   bbc     =   1,   2,   3,   4
+   station  = MEDICINA /
+!--------------------------------------------------------------------------
+   firstlo= 7650,7650,7650,7650
+   ifchan  =   A,A,A,A
+   bbc     =   1,   2,   3,   4
+   format = MARK5B   station  = YEBES40M /
 !--------------------------------------------------------------------------
    firstlo= 8080,8080,8080,8080
    ifchan  =   A1,A1,A1,A1
@@ -23,11 +31,6 @@ barrel   = roll_off /
    ifchan='A1','A1','A1','A1'
    bbc = 1,2,3,4
    format   = Mark5B station  = WARK /
-!--------------------------------------------------------------------------
-   firstlo=7600,7600,7600,7600
-   ifchan='A1','A1','A1','A1'
-   bbc = 1,2,3,4
-   format   = Mark5B station  = WARK30M /
 !--------------------------------------------------------------------------
    firstlo=7600,7600,7600,7600
    ifchan='A1','A1','A1','A1'
@@ -54,10 +57,10 @@ barrel   = roll_off /
    bbc = 1,3,5,7
    station  = YAMAGU32 /
 !--------------------------------------------------------------------------
-!   firstlo=8080,8080,8080,8080
-!   ifchan='A','A','A','A'
-!   bbc=   1,   2,   3,   4
-!   format   = Mark5B station  = BADARY, SVETLOE, ZELENCHK /
+   firstlo=8080,8080,8080,8080
+   ifchan='A','A','A','A'
+   bbc=   1,   2,   3,   4
+   format   = Mark5B station  = BADARY, SVETLOE, ZELENCHK /
 !--------------------------------------------------------------------------
    firstlo=7800,7800,7800,7800
    ifchan='2N','2N','2N','2N'
@@ -69,37 +72,25 @@ barrel   = roll_off /
    bbc= 1,3,5,7
    station=ATCA /
 !--------------------------------------------------------------------------
-   firstlo=8400,8400,8400,8400
-   m4patch = 'geo1'
-   ifchan='1N','1N','1N','1N'
-   bbc= 5,6,7,8
-   format = MKIV1:2 station=HOB_MK5 /
-!--------------------------------------------------------------------------
    firstlo=7800,7800,7800,7800
-   ifchan='A','A','A','A'
+   ifchan='2N','2N','2N','2N'
+   bbc= 1,3,5,7
+   station=Hobart /
+!--------------------------------------------------------------------------
+   firstlo=8080,8080,8080,8080
+   ifchan='A1','A1','A1','A1'
    bbc= 1,2,3,4
-   station=HOB_DBB /
+   station=Hart15m,Hart /
 !--------------------------------------------------------------------------
-!   firstlo=8080,8080,8080,8080
-!   ifchan='A1','A1','A1','A1'
-!   bbc= 1,2,3,4
-!   station= Hart15m ,Hart /
-!--------------------------------------------------------------------------
-   firstlo= 8100,8100,8100,8100
+   firstlo= 8100,8100,8100,8100          
    ifchan  =  A,  A,  A,  A                          
    bbc     =  1,  2,  3,  4
-   format = MARK5B   station  = Shanghai,kunming,URUMQI,tianma65 /
+  format = MARK5B   station  =  Shanghai,kunming,URUMQI,tianma65 /
 !--------------------------------------------------------------------------
    firstlo=0.0
    ifchan='A','A','A','A'
    bbc= 4,4,4,4
    station=KVNUS /
-!--------------------------------------------------------------------------
-   firstlo=7580,7580,7580,7580
-   ifchan='B','B','B','B'
-   m4patch = 'geo1
-   bbc=   5,   6,   7,   8
-   format = MARK5B station  = WETTDBBC /
 !--------------------------------------------------------------------------
 !
    ifchan=''
@@ -107,5 +98,5 @@ barrel   = roll_off /
    m4patch = 'geo1'
    ifchan='3O','3O','3O','3O'
    bbc=   5,   6,   7,   8
-   format = mkiv1:2 station  = WETTZELL /
+   format = mkiv1:4 station  = WETTZELL /
 !--------------------------------------------------------------------------
