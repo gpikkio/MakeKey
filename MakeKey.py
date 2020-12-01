@@ -13,6 +13,9 @@ import complete
 import time
 from datetime import date
 from subprocess import call
+# The following lines allow the code to run on both py2 and py3
+if hasattr(__builtins__, 'raw_input'):
+    input = raw_input
 
 # signal handler for catching CTRL-C
 #
