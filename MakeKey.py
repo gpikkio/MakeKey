@@ -5,7 +5,7 @@
 #
 # Giuseppe Cimo' 16/02/2012
 #
-
+from __future__ import print_function
 import sys, signal, re, os
 from classmakekey import MakeKey
 import mods
